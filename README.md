@@ -57,6 +57,7 @@ From this it didnt take long to diagnose U11 as the problem, once replaced syncs
 The video had a strange fault, evident in the photo that shows a blank screen (with raster lines showing), in the first column of dots of each character.  In inverse mode the first column of dots is missing!  
 
 All bits other than bit D0 were observed to be coming out of the Char Gen Eprom, maybe this is the problem as one of the char gen eproms did read intermittently in my eprom programmer.  Replaced with a copy of the other working eprom, fault still there!
+I dumped the char gen eprom and worked out that the LH column is D7, but needed more information to find how this gets from the char gen eprom to the video shift register.
 
 This was going to be hard to track down without a schematic so I spent many hours reverse engineering the circuit from the Char Gen Eprom to the video shift register.  This schematic is in the documentation folder.
 
