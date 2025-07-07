@@ -38,9 +38,17 @@ Then powered it up,no video or sync output, I looked for normal bus activity as 
 After many restarts and measurements with the scope I noted the data bus signals looked pretty bad, I suspected the 8212 bus interface chip. 
 Unfortunately this wasnt socketed and I didnt want to risk damaging the working chip from the other terminal so I ordered another one and put the board aside until it arrived.
 
+With the replacement 8212 installed, still no video or sync output, the data bus was now more active but one of the data lines was loaded down to near 0V all the time.
+There are many chips that could cause this, I decided to remove the 8251 uart chips first as I thought they would not stop the firmware running.  No change to the data bus.
 
+Next chip removed was the 8155 PIA chip, this fixed the data bus fault but the CRTC chip didnt seem to get initialised.  I ordered another 8155 chip.  After replacing it the data bus was still ok and there was more activity on the address and data buses.
 
-were not switching correctly due most likely to a faulty chip loading down the bus.
+I replaced the 8251 Uart chips one at a time and found 2 of them were also faulty, dragging down the data bus!  With these replaced the firmware seemed to be running with address and data busses looking similar to the first terminal.
+
+There was still no video or sync output, I checked the clock to the CRTC chip and it was bad just like in the first terminal.
+Replaced U14 and clock was back.  
+
+Aditionally there was a signal 
 
 
 
