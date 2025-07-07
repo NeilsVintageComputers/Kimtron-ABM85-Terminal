@@ -4,6 +4,7 @@
 
 I aquired 2x ABM85 terminals, one without the keyboard, both not working.
 - Terminal 1
+- 
   The first one I worked on had no video or sync outputs and very little activity on the address and data buses.
   
   I removed the eproms from both machines and read the contents, they had data that didnt show any bit faults and the eproms from both read the same though one Char rom sometimes read incorrectly.
@@ -25,7 +26,10 @@ I aquired 2x ABM85 terminals, one without the keyboard, both not working.
 
   One down, one to go.........
 
-  - Terminal 2
+  
+- Terminal 2
+- 
+
  
     
 
