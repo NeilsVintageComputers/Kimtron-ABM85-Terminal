@@ -54,6 +54,14 @@ At this stage I decided I needed to reverse engineer the video output circuits f
 
 From this it didnt take long to diagnose U11 as the problem, once replaced syncs were restored and at last there was now video on the screen!
 
+The video had a strange fault, evident in the photo that shows a blank screen (with raster lines showing), in the first column of dots of each character.  In inverse mode the first column of dots is missing!  
+
+All bits other than bit D0 were observed to be coming out of the Char Gen Eprom, maybe this is the problem as one of the char gen eproms did read intermittently in my eprom programmer.  Replaced with a copy of the other working eprom, fault still there!
+
+This was going to be hard to track down without a schematic so I spent many hours reverse engineering the circuit from the Char Gen Eprom to the video shift register.  This schematic is in the documentation folder.
+
+The resultant schematic showed the D0 pin is not used, a red herring.  However with a schematic it didnt take long to find the problem was a faulty U15 in the character attribute circuit.  With this replaced correct video was displayed on the crt!!!
+
 
 
 
