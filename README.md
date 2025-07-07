@@ -38,8 +38,8 @@ Then powered it up,no video or sync output, I looked for normal bus activity as 
 After many restarts and measurements with the scope I noted the data bus signals looked pretty bad, I suspected the 8212 bus interface chip. 
 Unfortunately this wasnt socketed and I didnt want to risk damaging the working chip from the other terminal so I ordered another one and put the board aside until it arrived.
 
-With the replacement 8212 installed, still no video or sync output, the data bus was now more active but one of the data lines was loaded down to near 0V all the time.
-There are many chips that could cause this, I decided to remove the 8251 uart chips first as I thought they would not stop the firmware running.  No change to the data bus.
+With the replacement 8212 installed, still no video or sync output, the data bus was now more active but some of the data lines were loaded down to near 0V all the time.
+There are many chips that could cause this, I decided to remove the 8251 uart chips first as I thought they would not stop the firmware running.  No significant change to the data bus.
 
 Next chip removed was the 8155 PIA chip, this fixed the data bus fault that I had seen but still no video or sync outputs.  I ordered another 8155 chip.  After replacing it the data bus was still ok and there was more activity on the address and data buses than I had seen before.
 
@@ -67,9 +67,10 @@ So now I had video on the screen, next step was to connect the keyboard and test
 No data came out!
 
 I had already replaced the uart chip so removed the 1488 and 1489 and tested them, both were faulty!
-Decided to replace the uart and driver chips together in case one was blowing up the other. I removed the 8251, 1488, and 1489 chips from the printer channel to use in the main channel, but when tested the 1488 in this channel was faulty as well.
+Decided to replace the uart and driver chips together in case one was blowing up the other. 
+I removed the 8251, 1488, and 1489 chips from the printer channel to use in the main channel, but when tested the 1488 in this channel was faulty as well.
 
-I ordered some replacement 1488/1489 chips which fixed the last problem with the terminal!!!!!
+I ordered some replacement 1488/1489 chips which fixed the final problem with the terminal!!!!!
 I havent tested the printer channel but will probably never use it.
 
 Time for a beer :)
