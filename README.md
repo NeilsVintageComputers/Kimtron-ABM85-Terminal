@@ -64,7 +64,7 @@ This was going to be hard to track down without a schematic so I spent many hour
 The resultant schematic showed the D0 pin is not used, a red herring.  However with a schematic at hand it didnt take long to find the problem which was a faulty U15 in the character attribute circuit.  With this replaced correct video was displayed on the crt!!!
 
 So now I had video on the screen, next step was to connect the keyboard and test the terminal.
-No data came out!
+....... No data came out!
 
 I had already replaced the uart chip so removed the 1488 and 1489 and tested them, both were faulty!
 Decided to replace the uart and driver chips together in case one was blowing up the other. 
