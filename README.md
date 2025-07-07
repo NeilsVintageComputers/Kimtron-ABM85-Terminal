@@ -35,14 +35,14 @@ With the 8275 replaced with a tested Aliexpress chip I checked the ram chips, on
 
 Then powered it up and looked for normal bus activity as seen on the first board, the firmware only ran for a short time before all activity stopped!
 
-After many restarts and measurements with the scope I noted the data bus signal looked pretty bad, I suspected the 8212 bus interface chip. 
-Unfortunately this wasnt socketed and I didnt want to risk damaging the working chip from the other terminal so I ordered anothe one and put the board aside until it arrived.
+After many restarts and measurements with the scope I noted the data bus signals looked pretty bad, I suspected the 8212 bus interface chip. 
+Unfortunately this wasnt socketed and I didnt want to risk damaging the working chip from the other terminal so I ordered another one and put the board aside until it arrived.
 
 
 
 were not switching correctly due most likely to a faulty chip loading down the bus.
 
-The first chip I suspected
+
 
  
     
