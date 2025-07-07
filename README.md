@@ -48,7 +48,17 @@ I replaced the 8251 Uart chips one at a time and found 2 of them were also fault
 There was still no video or sync output, I checked the clock to the CRTC chip and it was bad just like in the first terminal.
 Replaced U14 and clock was back.  
 
-Aditionally there was a signal 
+Aditionally there was a signal at the video output but no sync outputs.  Measured the sync outputs at the CRTC pins and found both present, a great sign showing the board was basicaly running the sync signals were just not getting to the output terminals.
+
+At this stage I decided I needed to reverse engineer the video output circuits from the CRTC chip to the sync output terminals, this took hours of tracing out every pin of every connected IC, the resultant schematic is in the documentation folder.  
+
+From this it didnt take long to diagnose U11 as the problem, once replaced syncs were restored and at last there was now video on the screen!
+
+
+
+
+
+
 
 
 
