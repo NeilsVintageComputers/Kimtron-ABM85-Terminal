@@ -54,7 +54,7 @@ At this stage I decided I needed to reverse engineer the video output circuits f
 
 From this it didnt take long to diagnose U11 as the problem, once replaced syncs were restored and at last there was now video on the screen!
 
-The video had a strange fault, evident in the photo that shows a blank screen (with raster lines showing), in the first column of dots of each character.  In inverse mode (at the bottom of the screen) the first column of dots is missing!  
+The video had a strange fault, evident in the photo that shows a blank screen (with raster lines showing). In the first column of dots of each character, in inverse mode (in the line at bottom of the screen) the first column of dots is missing!  
 
 All bits other than bit D0 were observed to be coming out of the Char Gen Eprom, maybe D0 is the problem as one of the char gen eproms did read intermittently in my eprom programmer.  Replaced with a copy of the other working eprom, fault still there!
 I dumped the char gen eprom and worked out that the LH column is D7, but needed more information to find how this gets from the char gen eprom to the video shift register.
@@ -68,9 +68,10 @@ No data came out!
 
 I had already replaced the uart chip so removed the 1488 and 1489 and tested them, both were faulty!
 Decided to replace the uart and driver chips together in case one was blowing up the other. 
+
 I removed the 8251, 1488, and 1489 chips from the printer channel to use in the main channel, but when tested the 1488 in this channel was faulty as well.
 
-I ordered some replacement 1488/1489 chips which fixed the final problem with the terminal!!!!!
+I ordered some replacement 1488/1489 chips and swapped the 8251 with the printer channel. This fixed the final problem with the terminal!!!!!
 I havent tested the printer channel but will probably never use it.
 
 Time for a beer :)
