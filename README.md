@@ -31,7 +31,7 @@ I aquired 2x ABM85 terminals, one without the keyboard, both not working.
 
 After finaly repairing the first terminal I was more optimistic when starting on the second one.
 
-With the 8275 replaced with a tested Aliexpress chip I checked the ram chips, once again all were faulty!  
+With the 8275 replaced with a tested Aliexpress chip I checked the ram chips, .... once again all were faulty!  
 
 Then powered it up, no video or sync output, I looked for normal bus activity as seen on the first board, the firmware only ran for a short time before all activity stopped!
 
@@ -39,7 +39,7 @@ After many restarts and measurements with the scope I noted the data bus signals
 Unfortunately this wasnt socketed and I didnt want to risk damaging the working chip from the other terminal so I ordered another one and put the board aside until it arrived.
 
 With the replacement 8212 installed, still no video or sync output, the data bus was now more active but some of the data lines were loaded down to near 0V all the time.
-There are many chips that could cause this, I decided to remove the 8251 uart chips first as I thought they would not stop the firmware running.  No significant change to the data bus.
+There are many chips that could cause this, I decided to remove the 8251 uart chips first as I thought they would not stop the firmware running. .... No significant change to the data bus.
 
 Next chip removed was the 8155 PIA chip, this fixed the data bus fault that I had seen but still no video or sync outputs.  I ordered another 8155 chip.  After replacing it the data bus was still ok and there was more activity on the address and data buses than I had seen before.
 
@@ -52,7 +52,7 @@ Aditionally there was a signal at the video output but no sync outputs.  Measure
 
 At this stage I decided I needed to reverse engineer the video output circuits from the CRTC chip to the sync output terminals, this took hours of tracing out every pin of every connected IC, the resultant schematic is in the documentation folder.  
 
-From this it didnt take long to diagnose U11 as the problem, once replaced syncs were restored and at last there was now video on the screen!
+From this it didnt take long to diagnose U11 as the problem, once replaced syncs were restored and at last there was now video on the screen!!
 
 The video had a strange fault, evident in the photo that shows a blank screen (with raster lines showing). In the first column of dots of each character, in inverse mode (in the line at bottom of the screen) the first column of dots is missing!  
 
@@ -63,8 +63,7 @@ This was going to be hard to track down without a schematic so I spent many hour
 
 The resultant schematic showed the D0 pin is not used, a red herring.  However with a schematic at hand it didnt take long to find the problem which was a faulty U15 in the character attribute circuit.  With this replaced correct video was displayed on the crt!!!
 
-So now I had video on the screen, next step was to connect the keyboard and test the terminal.
-....... No data came out!
+So now I had video on the screen, next step was to connect the keyboard and test the terminal. .... No data came out!
 
 I had already replaced the uart chip so removed the 1488 and 1489 and tested them, both were faulty!
 Decided to replace the uart and driver chips together in case one was blowing up the other. 
