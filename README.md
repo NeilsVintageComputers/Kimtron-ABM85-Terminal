@@ -4,7 +4,7 @@
 
 I aquired 2x ABM85 terminals, one without the keyboard, both not working.
 - Terminal 1
-- 
+ 
   The first one I worked on had no video or sync outputs and very little activity on the address and data buses.
   
   I removed the eproms from both machines and read the contents, they had data that didnt show any bit faults and the eproms from both read the same though one Char rom sometimes read incorrectly.
@@ -28,7 +28,21 @@ I aquired 2x ABM85 terminals, one without the keyboard, both not working.
 
   
 - Terminal 2
-- 
+
+  After finaly repairing the first terminal I was more optimistic when starting on the second one.
+
+With the 8275 replaced with a tested Aliexpress chip I checked the ram chips, once again all were faulty!  
+
+Then powered it up and looked for normal bus activity as seen on the first board, the firmware only ran for a short time before all activity stopped!
+
+After many restarts and measurements with the scope I noted the data bus signal looked pretty bad, I suspected the 8212 bus interface chip. 
+Unfortunately this wasnt socketed and I didnt want to risk damaging the working chip from the other terminal so I ordered anothe one and put the board aside until it arrived.
+
+
+
+were not switching correctly due most likely to a faulty chip loading down the bus.
+
+The first chip I suspected
 
  
     
