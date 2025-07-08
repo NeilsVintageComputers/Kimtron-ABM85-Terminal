@@ -29,7 +29,7 @@ I aquired 2x ABM85 terminals, one without the keyboard, both not working.
   
 - Terminal 2
 
-After finaly repairing the first terminal I was more optimistic when starting on the second one.
+After finaly repairing the first terminal I was more optimistic when starting on the second one..........little did I know
 
 With the 8275 replaced with a tested Aliexpress chip I checked the ram chips, .... once again all were faulty!  
 
