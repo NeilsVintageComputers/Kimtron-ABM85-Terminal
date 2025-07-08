@@ -21,7 +21,7 @@ I aquired 2x ABM85 terminals, one without the keyboard, both not working.
   
   After it sat untouched for a couple of months I found the 8275 chips for sale on Aliexpress and ordered a few.
   
-  When the chips arrived I fitted one and was pleasantly supprised that it burst into life! .... Both of my terminals had faulty 8275 CRTC
+  When the chips arrived I fitted one and was pleasantly surprised that it burst into life! .... Both of my terminals had faulty 8275 CRTC
  chips!
 
   One down, one to go.........
