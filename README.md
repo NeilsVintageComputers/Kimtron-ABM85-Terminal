@@ -66,12 +66,12 @@ The resultant schematic showed the D0 pin is not used, a red herring.  However w
 So now I had video on the screen, next step was to connect the keyboard and test the terminal. .... No data came out!
 
 I had already replaced the uart chip so removed the 1488 and 1489 and tested them, both were faulty!
-Decided to replace the uart and driver chips together in case one was blowing up the other. 
+Not knowing if these might have also blown up the replacement 8251 (which I had no more spares of) I decided to replace the uart and driver chips together with the ones from the printer channel. (The uart was a new one I had previously fitted)
 
-I removed the 8251, 1488, and 1489 chips from the printer channel to use in the main channel, but when tested the 1488 in this channel was faulty as well.
+I removed the 8251, 1488, and 1489 chips from the printer channel, I tested the 1488/1489 chips and found the 1488 in this channel was faulty as well.
 
-I ordered some replacement 1488/1489 chips and swapped the 8251 with the printer channel. This fixed the final problem with the terminal!!!!!
-I havent tested the printer channel but will probably never use it.
+I ordered some replacement 1488/1489 chips, when they arrived I fitted them to the main serial channel .... This fixed the final problem with the terminal!!!!!
+I havent tested the printer channel (which now has the uart from the main channel) but will probably never use it.
 
 
 
